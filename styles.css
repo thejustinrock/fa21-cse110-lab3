@@ -29,6 +29,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+h1, h2 {
+    font-family: serif;
+}
+
 h3 {
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
@@ -57,6 +61,14 @@ li:hover {
     min-width: 500px;
 }
 
+div {
+    flex: flex-grow flex-shrink flex-basis;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+}
+
 footer {
     border-top: 0.1ch;
     border-bottom: 0.1ch;
@@ -65,4 +77,43 @@ footer {
     border-width: thick;
     border-radius: 30px;
     display: block;
+}
+
+#fname {
+    color:black;
+}
+
+* {
+    background-color: beige;
+}
+
+input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+  }
+
+  li li {
+    list-style-type: circle;
+  }
+
+  div > p {
+    background-color: yellow;
+  }
+
+  div ~ li {
+    background-color: red;
+  }
+
+  div + p {
+      background-color: blue;
+  }
+
+  p.Brainstorm {
+      color: purple;
+  }
+@media(min-width: 600px) {
+    p {
+        font-size: 1.5rem;
+    }
 }
